@@ -1,0 +1,34 @@
+Toutes les opérations en mathématiques ont une certaine priorité : on effectue d'abord l'exponentiation, puis la division modulo, et ainsi de suite. 
+Cette priorité est également respectée en Python :
+---
+All operations in mathematics have a certain priority: exponentiation is performed first, then modulo division, and so on. 
+This priority is also respected in Python :
+
+Priorité/Priority 	Opérateur Python/Operator Python	Opération/Operation                 	Exemple/Example	Résultat/Result
+1                  	**	                              Dégradation/Degradation	              5 ** 5        	3125
+2	                  %	                                Division modulo (obtention du reste)	16 % 7	        2
+3                 	//	                              Division d'un nombre entier          	13 // 3       	4
+4                 	/	                                Division/Division                   	39 / 2	        19.5
+5	                  *	                                Multiplication/Multiplication       	123 * 321     	39483
+6	                  -	                                Soustraction/Subtraction            	999 – 135      	864
+7                 	+	                                Pliage/Adding	                        478 + 32      	510
+
+
+
+Python permet d'utiliser l'addition et la multiplication dans les opérations sur les chaînes de caractères.
+L'addition de chaînes de caractères, comme mentionné ci-dessus, est appelée concaténation :
+---
+Python allows addition and multiplication in string operations. 
+String addition, as mentioned above, is called concatenation:
+
+>>> print('Python -'+ 'is' + ' best' + ' programming' + ' language')
+Python is best programming language
+
+
+
+La multiplication d'une chaîne de caractères par un nombre entier s'appelle la réplication :
+---
+Multiplying a string by an integer is called replication:
+
+>>> print('Replicants' * 5)
+ReplicantsReplicantsReplicantsReplicantsReplicants
