@@ -1,0 +1,40 @@
+Variables are used to store data. A variable name in Python must start with an alphabetic character or an underscore and may contain alphanumeric characters and an underscore. 
+And also, the variable name must not be the same as the name of the Python keywords. There are not many keywords and they are easy to remember:
+Les variables sont utilisées pour stocker des données. Un nom de variable en Python doit commencer par un caractère alphabétique ou un trait de soulignement et peut contenir des caractères alphanumériques et un trait de soulignement. 
+De plus, le nom de la variable ne doit pas être le même que le nom des mots-clés Python. Les mots-clés sont peu nombreux et faciles à mémoriser :
+
+False      await      else       import     pass
+None       break      except     in         raise
+True       class      finally    is         return
+and        continue   for        lambda     try
+as         def        from       nonlocal   while
+assert     del        global     not        with
+async      elif       if         or         yield
+
+
+Data types//Types de données:	   Value//Valeur	                                        Definition in Python//Définition en Python	  Usage option//Option d'utilisation
+Integer numbers	                 -3, -2, -1, 0, 1, 2, 3	                                int	                                          a = int(input())
+Real numbers	                   -1.5, -1.1, 0.6, 1.7                                   float                                        	a = float(input())
+Complex numbers	                 −5i, 3+2i	                                            complex                                      	a = complex(input())
+Boolean values	                 True, False                                          	True, False                                  	flag = True
+NoneType	                       None                                                 	None	                                        a = None
+Line	                           'abracadabra'                                        	str                                          	a = str(5)
+List	                           [1, 2, 3], ['a', 'b', 'c']	                            list                                         	a = list(('a', 'b', 'c'))
+tuple                          	('red', 'blue', 'green')                              	tuple                                        	a = tuple(('red', 'blue', 'green'))
+Variable set	                  {'black', 'blue', 'white'}, {1, 3, 9, 7}	              set                                         	a = set(('black', 'blue', 'white'))
+Unchangeable set	              {'red', 'blue', 'green'}, {2, 3, 9, 5}	                frozenset	                                    a = frozenset((2, 5, 3, 9))
+Range	                          0, 1, 2, 3, 4, 5                                       	range	                                        a = range(6)
+Dictionary                     	{'color': 'red', 'model': 'VC6', 'dimensions': '30x50'}	dict                                         	a = dict(color='red', model='VC6', dimensions='30x50')
+Bytes                          	b'\x00\x00\x00'                             	          bytes	                                        a = bytes(3)
+Byte string                    	(b'\x00\x00')                               	          bytearray                                   	a = bytearray(2)
+Memory View                    	0x1477a5813a00                                        	memoryview                                  	a = memoryview(bytes(15))
+
+
+To find out the data type, you need to use the built-in type() function:
+Pour connaître le type de données, utilisez la fonction intégrée type() :
+
+>>> a = 3.5
+>>> type(a)
+<class 'float'>
+
+
